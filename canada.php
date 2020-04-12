@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>colectivo CP.La Tortuga </title>
+    <title>Colectivo CP.La Tortuga </title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/nosotros.css">
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
+	
 
 	<link href="web_admin/css/estilos.css" rel="stylesheet">
 	<script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
@@ -33,15 +34,16 @@
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quienes somos</a></li>
+			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quiénes somos</a></li>
 			  <li><a href="proyectos.php"><span class="glyphicon glyphicon-modal-window"></span> CLT-CT-Proyectos</a></li>
 				
-			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayudanos ?</a></li>
+			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayúdanos</a></li>
 				
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Testimonios</a></li>
-				<li><a href="video.php"><span class="glyphicon glyphicon-modal-window"></span> Galeria</a></li>
-				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contactanos</a></li>
+				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galería</a></li>
+				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contáctanos</a></li>
 	
+			
 				
 	
 			</ul>
@@ -71,7 +73,7 @@
               <h1>
 				 
 			  <img src="img/LOGOSINFONDO.png" alt="Trulli" width="90" height="80">
-			  CONTACTANOS - CANADA <small></small></h1>
+			  CONTÁCTANOS - CANADA <small></small></h1>
             </div>
             <div class="col-md-2">
               <div class="dropdown crear">
@@ -102,10 +104,10 @@
     <div class="container">
     	<div class="row">
     		<div class="col-xs-12 col-sm-12 col-md-4">
-    			<h4>Comuniquese con nosotros</h4>
+    			<h4>Comuníquese con nosotros</h4>
 				<div id="informacion_contacto">
-			      <p><i class="fa fa-email"></i><b>Asociacion</b><br>
-			      	Colectivo civico por el desarrollo integral del centro poblado la Tortuga-Paita</p>
+			      <p><i class="fa fa-email"></i><b>Asociación</b><br>
+			      	Colectivo Civico por el desarrollo integral del centro poblado la Tortuga-Paita</p>
 			      <p>
 			      	<b>RUC</b><br>
 			      	20605653406
@@ -121,9 +123,10 @@
 			  	</div>
 		  	</div>
 		  	<div class="col-xs-12 col-sm-12 col-md-8">
-		  		<h4>Estamos aquí</h4>
-	      		<iframe id="mapa" src="https://www.google.com/maps/place/Canad%C3%A1/@50.7982534,-130.2104871,3z/data=!3m1!4b1!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771?hl=es-419" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-			  </div>
+			  <h4>Estamos aquí</h4>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d71153.51628307508!2d-106.41681079086162!3d56.130346190689124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2zQ2FuYWTDoQ!3m2!1d56.130365999999995!2d-106.34677099999999!4m5!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2zQ2FuYWTDoQ!3m2!1d56.130365999999995!2d-106.34677099999999!5e0!3m2!1ses-419!2spe!4v1585841857490!5m2!1ses-419!2spe" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+				</div>
 			  
 
 
@@ -152,15 +155,14 @@
 
 
 
-
-
+<script src="js/canada.js"></script>
 
 
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-	<script src="ipp.js"></script>
+	<script src="js/ipp.js"></script>
     
 </body>
 </html>

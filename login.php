@@ -1,113 +1,116 @@
-<?php
-include "admin/database.php";
-$db = new Database();
-$con = $db->connect();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colectivo CP.La Tortuga| LOGIN </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/nosotros.css">
+	<link href="web_admin/css/estilos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/fotos2.css">
+	<link rel="stylesheet" type="text/css" href="css/est.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/fondoimg.css">
+	
+	<script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+		<style></style>
 
-session_start();
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+		<div class="collapse navbar-collapse" id="collapse">
+			<ul class="nav navbar-nav">
+            <li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quiénes somos</a></li>
+			  <li><a href="proyectos.php"><span class="glyphicon glyphicon-modal-window"></span> CLT-CT-Proyectos</a></li>
+				
+			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayúdanos</a></li>
+				
+				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Testimonios</a></li>
+				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galería</a></li>
+				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contáctanos</a></li>
+	
+            </ul>
 
-#Login script is begin here
-#If user given credential matches successfully with the data available in database then we will echo string login_success
-#login_success string will go back to called Anonymous funtion $("#login").click()
+            <!--
+			<form class="navbar-form navbar-left">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search" id="search">
+		        </div>
+		        <button type="submit" class="btn btn-primary" id="search_btn"><span class="glyphicon glyphicon-search"></span></button>
+		     </form>
+			 -->
+			<ul class="nav navbar-nav navbar-right">
+			
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
 
-if(isset($_POST["email"]) && isset($_POST["password"])){
+<div id="fondo">
+  <div id="nosotros">
 
-	$email = mysqli_real_escape_string($con,$_POST["email"]);
-	$password = md5($_POST["password"]);
-	$sql = "SELECT * FROM colaboradores WHERE email = '$email' AND clave = '$password'";
-	$run_query = mysqli_query($con,$sql);
-	$count = mysqli_num_rows($run_query);
-	//if user record is available in database then $count will be equal to 1
-	if($count == 1){
-		$row = mysqli_fetch_array($run_query);
-		$_SESSION["uid"] = $row["idcolaborador"];
-		$_SESSION["name"] = $row["nombre"];
-		$ip_add = getenv("REMOTE_ADDR");
-		mysqli_free_result($run_query);
-		//we have created a cookie in login_form.php page so if that cookie is available means user is not login
-			if (isset($_COOKIE["product_list"])) {
-				$p_list = stripcslashes($_COOKIE["product_list"]);
-				//here we are decoding stored json product list cookie to normal array
-				$product_list = json_decode($p_list,true);
-				for ($i=0; $i < count($product_list); $i++) {
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+          <img src="img/LOGOSINFONDO.png" alt="Trulli" width="90" height="80">
+			  BIENVENIDO ADMINISTRADOR <small></small></h1>
+          </div>
+        
+        </div>
+      </div>
+    </header>
+</div>
+</div>
 
-					//After getting user id from database here we are checking user cart item if there is already product is listed or not
-					$verify_cart = "SELECT id FROM cart WHERE user_id = $_SESSION[uid] AND p_id = ".$product_list[$i];
-					$result  = mysqli_query($con,$verify_cart);
-					if(mysqli_num_rows($result) < 1){
-						//if user is adding first time product into cart we will update user_id into database table with valid id
-						$update_cart = "UPDATE cart SET user_id = '$_SESSION[uid]' WHERE ip_add = '$ip_add' AND user_id = -1";
-						mysqli_query($con,$update_cart);
-					}else{
-						//if already that product is available into database table we will delete that record
-						$delete_existing_product = "DELETE FROM cart WHERE user_id = -1 AND ip_add = '$ip_add' AND p_id = ".$product_list[$i];
-						mysqli_query($con,$delete_existing_product);
-					}
-				}
+    <div class="fondo-titulo">
+<div class="container">
 
-				mysqli_free_result($result);
+</div>
+</div>
+<form action="compruebavideo.php" method="post">
+	<table>
+		<tr>
+			<td class="izq">
+				Usuario:</td><td class="der"><input type="text" name="login"></td></tr>
+				<tr><td class="izq">Contraseña:<td class="der"><input type="password" name="password"></td></tr>
+				<tr><td colspan="2"><input type="submit" name="enviar" value="Iniciar Cuenta"></td></tr></table>
+</form>
 
-				// Crear pedido
-				$ps = mysqli_stmt_init($con);
-				mysqli_stmt_prepare($ps, "INSERT INTO pedidos (idcliente, fechaRegistro, estado) VALUES(?, NOW(), 'A')");
-	      mysqli_stmt_bind_param($ps, 'i', $_SESSION["uid"]);
+<br><br>
 
-	      if(mysqli_stmt_execute($ps)){
-	        $lastId = mysqli_insert_id($con);
-	      }else{
-	        return ['status'=> 303, 'message'=> 'Failed to run query'];
-	      }
-				mysqli_stmt_free_result($ps);
-				mysqli_stmt_close($ps);
+<div align="center"><img src="img/colectivo1.jpeg" width="600" height="300" ></div>
 
-				//Crear detalles pedido
-				$ps = mysqli_stmt_init($con);
-				mysqli_stmt_prepare($ps, "INSERT INTO detalle_pedido (idproducto, idpedido, cantidad, subtotal) VALUES(?, ?, ?, ?)");
 
-				$p_list = stripcslashes($_COOKIE["product_list"]);
-				$q_list = stripcslashes($_COOKIE["quantity_list"]);
-				//here we are decoding stored json product list cookie to normal array
-				$product_list = json_decode($p_list,true);
-				$quantity_list = json_decode($q_list,true);
+<div class="container">
 
-				$productos = $product_list;
-				$cantidades = $quantity_list;
+</div>
 
-	      for($i = 0; $i < count($productos); $i++){
-	        $idProducto = intval($productos[$i]);
 
-	        $q = mysqli_query($con, "SELECT * FROM producto WHERE idproducto = '$idProducto' LIMIT 1");
+</div>
+	</div>
+<div id="footer">
+ <div id="copyrights">
+    <p><a href="index.html">Volver</a></p>
+         &copy; 2020  <a href="#">Colectivo Civico la Tortuga </a> 
+    </div> 
+</div>
 
-					$num_rows = mysqli_num_rows($q);
-					$idpedido = $lastId;
-
-	        if ($num_rows > 0) {
-	          while($row = mysqli_fetch_assoc($q)){
-	            $precio = $row['precio'];
-	            $cantidad = $cantidades[$i];
-	            $subtotal = $precio * $cantidades[$i];
-
-							mysqli_stmt_bind_param($ps, 'iiid', $idProducto, $idpedido, $cantidad, $subtotal);
-	            if(mysqli_stmt_execute($ps)){
-							}else{
-				        return ['status'=> 303, 'message'=> 'Failed to run query'];
-				      }
-	          }
-	        }
-	      }
-				//here we are destroying user cookie
-				setcookie("product_list","",strtotime("-1 day"),"/");
-				setcookie("quantity_list","",strtotime("-1 day"),"/");
-				//if user is logging from after cart page we will send cart_login
-				mysqli_query($con, "DELETE FROM cart");
-				echo "cart_login";
-				exit();
-			}
-			//if user is login from page we will send login_success
-			echo "login_success";
-			exit();
-		}else{
-			echo "<span style='color:red;'>Please register before login..!</span>";
-			exit();
-		}
-}
-?>
+  
+    
+</body>
+</html>

@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>colectivo CP.La Tortuga </title>
+    <title>Colectivo CP.La Tortuga </title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/nosotros.css">
     <link rel="stylesheet" type="text/css" href="css/contacto.css">
-    <link rel="stylesheet" type="text/css" href="fotos2.css">
-    <link rel="stylesheet" type="text/css" href="est.css">
+    <link rel="stylesheet" type="text/css" href="css/fotos2.css">
+    <link rel="stylesheet" type="text/css" href="css/est.css">
     <link rel="stylesheet" href="css/ESTI.CSS"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -42,14 +42,14 @@
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quienes somos</a></li>
+			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quiénes somos</a></li>
 			  <li><a href="proyectos.php"><span class="glyphicon glyphicon-modal-window"></span> CLT-CT-Proyectos</a></li>
 				
-			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayudanos ?</a></li>
+			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayúdanos</a></li>
 				
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Testimonios</a></li>
-				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galeria</a></li>
-				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contactanos</a></li>
+				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galería</a></li>
+				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contáctanos</a></li>
 	
 			
 	
@@ -107,14 +107,14 @@
             <li class="menu__item"><a href="Kotoss.html" class="menu__link">Fotos Antiguas</a></li>
 				 
 				
-            <li class="menu__item"> <a href="#" class="menu__link">Proposito</a></li>
-            <li class="menu__item"> <a href="formam.html" class="menu__link">¿Quienes lo forman?</a></li> 
+            <li class="menu__item"> <a href="proposito.php" class="menu__link">Propósito</a></li>
+            <li class="menu__item"> <a href="formam.php" class="menu__link">¿ Quiénes lo forman ?</a></li> 
           </ul>
         </nav>
       </div>
     </header>
     <div class="banner">
-        <img src="img/verde.jpg" alt="" class="banner__img">
+        <img src="img/colectivo1.jpeg" alt="" class="banner__img">
          <div class="contenedor">
            <h2 class="banner__titulo"></h2>
            <p class="banner__txt"></p>
@@ -125,11 +125,11 @@
            <section class="info">
              <article class="info__columna">
                <img src="#" alt="" class="info__img">
-               <h2 class="info__titulo">¿Quienes somos?
+               <h2 class="info__titulo">¿Quiénes Somos?
               </h2>
-               <p class="info__txt">Caleta la Tortuga se formo desde tiempo pre inka. 
-		   Desde este escondido lugar se ha benido practicando la pesca artesanal con balsas y practicas a
-		  hasta la fecha actual se conservan. Somos una comunidad aborigen Tallan a se establecio este lugar y que se le llamo  
+               <p class="info__txt">La Caleta la Tortuga se formó desde tiempo pre-inca. 
+		   Desde este escondido lugar se ha venido practicando la pesca artesanal con balsas y prácticas
+		  hasta la fecha actual se conservan. Somos una comunidad aborigen Tallan, se estableció este lugar y se le llamo  
 		   la tortuga por la abundancia de este hermoso animal en estas playas.</h6>
              </article>
            
@@ -139,9 +139,10 @@
 		   Nuestra misión
 		   </div>
 		   <div class="letra_maria">
-		    Es mejorar continuamente el compromiso con el que trabajamos día a día. Para lograrlo, hemos diseño proyectos el beneficio de nuestra gente tortugueña.
-	       Contamos con el apoyo incondicional de un grupo de pobladores de la caleta la tortuga con el fin de que obtengan conocimiento de los recursos atmosféricos presentes y que la comunidad puede aprovechar para su futuro desarrollo como la velocidad del viento y la energia solar de la zona.</p>
-	        se ha logrado implementar las iniciativas energéticas comunitarias en los países en desarrollo son una excelente oportunidad para abordar temas como la desigualdad, la pobreza y el calentamiento global.
+		    Es mejorar continuamente el compromiso con el que trabajamos día a día. Para lograrlo, hemos diseñado proyectos en
+         beneficio de nuestra comunidad tortugueña.
+	      Contamos con el apoyo incondicional de un grupo de pobladores de la comunidad con el fin de que obtengan conocimiento de los recursos atmosféricos presentes y que la comunidad puede aprovechar para su futuro desarrollo como la velocidad del viento y la energia solar de la zona.</p>
+	      se ha logrado implementar la iniciativa energética comunitarias en los países en desarrollo son una excelente oportunidad para abordar temas como la desigualdad, la pobreza y el calentamiento global y no estamos lejos de ello.
 
 		   </div>
 		   <div class="letra_maria">
@@ -154,17 +155,17 @@
                <img src="img/IEC1.jpg" alt="" class="cursos__img">
                <div class="cursos__descripcion">
                  <h2 class="cursos__titulo">En el 2010</h2>
-                 <div class="cursos__txt"> La capacidad instalada de energia de viento en el Perú era de 0.7 Mega Watts.
-                  Se han realizado 4 subastas publicas que han permitido 71 proyectos de producción de energia removable con 
+                 <div class="cursos__txt"> La capacidad instalada de energía de viento en el Perú era de 0.7 Mega Watts.
+                  Se han realizado 4 subastas públicas que han permitido 71 proyectos de producción de energía removable con 
                   una capacidad de 1.34 Giga-watts. 
                  </div>
                </div>
              </div>
              <div class="cursos__columna">
-               <img src="img/iec3.jpg" alt="" class="cursos__img">
+               <img src="img/pau.jpg" alt="" class="cursos__img">
                <div class="cursos__descripcion">
                  <h2 class="cursos__titulo"> En el 2018</h2>
-                 <div class="cursos__txt"> El total de granjas solares y eolicas fueron responsables por la producción de 990 Giga-watts-hora de energia.
+                 <div class="cursos__txt"> El total de granjas solares y eólicas fueron responsables por la producción de 990 Giga-watts-hora de energía.
                 
 
                     </div>
@@ -174,16 +175,16 @@
                <img src="img/iec5.jpg" alt="" class="cursos__img">
                <div class="cursos__descripcion">
                  <h2 class="cursos__titulo"> Actualmente en el Perú,</h2>
-                 <div class="cursos__txt">La producción de energia renovable ha excedido el 5 % del total de energia electrica producida en el pais.<br>
-                  Ha habido una significativa inversión en proyectos de energia renovable, provenientes del sector privado</div>
+                 <div class="cursos__txt">La producción de energía renovable ha excedido el 5 % del total de energía eléctrica producida en el país.<br>
+                 acontecio una significativa inversión en proyectos de energía renovable, provenientes del sector privado.</div>
                </div>
              </div>
              <div class="cursos__columna">
                <img src="img/iec4.jpg" alt="" class="cursos__img">
                <div class="cursos__descripcion">
-                 <h2 class="cursos__titulo">Paradojicamente</h2>
-                 <div class="cursos__txt">No ha habido hasta la fecha ningun proyecto energetico de propiedad comunitaria.<br>
-                  Existe una total escaces de proyectos de energia comunitaria y total ausencia en las politicas o algun tipo 
+                 <h2 class="cursos__titulo"></h2>
+                 <div class="cursos__txt">No ha habido hasta la fecha ningún proyecto energético de propiedad comunitaria.<br>
+                  Existe una total escaces de proyectos de energía comunitaria y total ausencia en las políticas o algún tipo 
                   de incentive que apoye este tipo de iniciativas.
                  </div>
                </div>
@@ -231,7 +232,7 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-	<script src="ipp.js"></script>
+	<script src="js/ipp.js"></script>
     
 </body>
 </html>

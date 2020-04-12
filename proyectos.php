@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/nosotros.css">
 	<link href="web_admin/css/estilos.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="fotos2.css">
-    <link rel="stylesheet" type="text/css" href="est.css">
+	<link rel="stylesheet" type="text/css" href="css/fotos2.css">
+    <link rel="stylesheet" type="text/css" href="css/est.css">
 	<script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
 		<style></style>
 </head>
@@ -29,16 +29,16 @@
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quienes somos</a></li>
+			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quiénes somos</a></li>
 			  <li><a href="proyectos.php"><span class="glyphicon glyphicon-modal-window"></span> CLT-CT-Proyectos</a></li>
 				
-			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayudanos ?</a></li>
+			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayúdanos</a></li>
 				
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Testimonios</a></li>
-				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galeria </a></li>
-				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contacto</a></li>
+				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galería</a></li>
+				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contáctanos</a></li>
 	
-	
+			
             </ul>
 
             <!--
@@ -80,7 +80,7 @@
 				  <li><a type="button" data-toggle="modal" data-target="#addPage"></a></li>
 				  <li><a href="IEC.html">Estación Metereologica, IEC</a></li>
 				  <li><a href="turismo1.html">Turismo comunitario</a></li>
-				  <li><a href="arbolizacion.html">Arbolizacion del desierto</a></li>
+				  <li><a href="arbolizacion.html">Arbolización del desierto</a></li>
 				  <li><a href="residuos.html">Gestión de residuos</a></li>
                 
 				  <li><a href="biodi.html">Biodiversidad</a></li>
@@ -99,38 +99,39 @@
 			proyectos
 </div>
 <div class="proyecto">
-			<li class="negrita">La iniciativa de energia comunitaria La Tortuga</li>
+			<li class="negrita">La iniciativa de energía comunitaria La Tortuga</li>
 
 			<h4>Es un proyecto en marcha que ha nacido desde lo mas profundo de nuestra comunidad. Este modelo de desarrollo lo 
-			   hemos establecido con el fin de usar en forma renovable los flujos energeticos renovables que Permanentemente recibimos en nuestra comunidad como es la energia solar y eolica. 
-			   Con el fin de entender y dimecionar estos flujos renovables de energia, hemos instalado una estación 
-               metereologica professional que nos esta permitiendo conocer y educarnos cuanto disponemos de energia.
+			   hemos establecido con el fin de usar en forma renovable los flujos energéticos renovables que permanentemente recibimos en nuestra comunidad como es la energía solar y eólica. 
+			   Con el fin de entender y dimecionar estos flujos renovables de energía, hemos instalado una estación 
+               metereologica profesional que nos esta permitiendo conocer y educarnos cuanto disponemos de energía.
                A partir de la data obtenida es que hemos identificado claramente nuestros objectivos y hemos ya iniciado 
-               un proyecto de desarrollo basedo en el uso de esta energia para el futuro uso y beneficio de nuestra comunidad.<a href="IEC.html">Si quires conocer mas haz click aquí …..</a><h4>
+               un proyecto de desarrollo basado en el uso de esta energía para el futuro uso y beneficio de nuestra comunidad.<a href="IEC.html">Si quires conocer mas haz click aquí …..</a><h4>
 
 
 <li class="negrita">Turismo Comunitario La Tortuga</li>
-<h4> Esta ubicado en la linea costera en el corazón del desierto de Piura al norte del Perú. Tenemos más de 10 diferentes playas con paisaje unico y una maravillosa bio diversidad. En estas 
-     playas nuestros pescadores practican la pesca artesanal desde tiempo preinkas. Esta actividad es el sustento alimenticio y economico principal de nuestra Población. Nuestro CLT oftrece la posibilidad de 
-      facilitar a los visitatntes una posibilidad de turismo justo, comunitario y que basicamente ayude a nuestro 
+<h4> Esta ubicado en la linea costera en el corazón del desierto de Piura al norte del Perú. Tenemos más de 10 diferentes playas con paisaje unico y una maravillosa biodiversidad. En estas 
+     playas nuestros pescadores practican la pesca artesanal desde tiempo pre-incas. Esta actividad es el sustento alimenticio y económico principal de nuestra Población. Nuestro CLT ofrece la posibilidad de 
+      facilitar a los visitantes una posibilidad de turismo justo, comunitario y que basicamente ayude a nuestro 
      pueblo sin impactar a este maravilloso eco sistema.
+
 <a href="turismo1.html">haz click aquí.</a></h4>
 <li class="negrita">Arborización del desierto</li>
-<h4>Nuestro inventario de arboles plantas de nuestra comunidad realizado en el 
-2019 nos indico que disponiamos de 250 unidades verdes arboles arbustos y frutales. Despues de conocer nuestra realidad 
+<h4>Nuestro inventario de árboles plantados en nuestra comunidad realizado en el 
+2019 nos indico que disponiamos de 250 unidades verdes árboles arbustos y frutales. Después de conocer nuestra realidad 
 hemos iniciado un programa de reforestación de nuestra caleta y de las zonas despobladas.<a href="arbolizacion.html"> Si quieres conocer mas haz click aquí…</a></h4>
-<h2>Nuestra cedula forestal</h2>
-	<h4> consiste en una cedula fiversificada a incluye species nativas y exoticos utiles capades de soportar las condiciones atmosfericas de nuestra zona y sobre todo capaza de adaptarse a 
+<h2>Nuestra cédula forestal</h2>
+	<h4>Consiste en una cédula diversificada a incluye especies nativas y exóticos utiles capaces de soportar las condiciones atmosféricas de nuestra zona y sobre todo capaz de adaptarse a 
 condiciones minimas del recurso agua.<a href="cedula.html"> Si quieres conocer mas haz click aquí…</a></h4>
 <h2>Nuestro vivero </h2>
-<h4>incluye un espacio de una hectárea ubicado en el centro del desierto de la Tortuga. En este 
+<h4>Incluye un espacio de una hectárea ubicado en el centro del desierto de la Tortuga. En este 
 lugar estamos llevando a delante un programa de forestación<a href="COMUNITARIO.html"> Si quieres conocer mas haz click aquí…</a></h4>
-<li class="negrita">Gestion de Residuos</li>
-<h4>Uno de los principales desafios a tenemos n nuestra caleta es la falta de una gestion adecuada de 
-los residuos a diariamente generamos. Nuestras autoridades carecen de recursos y desconocen de methodologies 
-adecuadad para enfrentar este serio problema. Nuestro colectivo requiere de urgente apoyo para llegar adelante 
-un programa  adecuado que nos permits reducir, reciclar, re usar y compostar nuestros residuos. Tenemos ya nuestro 
-espacio y estrategia para llegar adelante este plan de gestion de residuos solo requerimos de tu apoyo.
+<li class="negrita">Gestión de Residuos</li>
+<h4>Uno de los principales desafios que tenemos en nuestra caleta es la falta de una gestión adecuada de 
+los residuos a diariamente generamos. Nuestras autoridades carecen de recursos y desconocen de metodologías 
+adecuadas para enfrentar este serio problema. Nuestro colectivo requiere de urgente apoyo para llegar adelante 
+un programa  adecuado que nos permita reducir, reciclar, re usar y compostar nuestros residuos. Tenemos ya nuestro 
+espacio y estrategia para llegar adelante este plan de gestión de residuos solo requerimos de tu apoyo.
 <a href="residuos.html"> Si quieres conocer mas haz click aquí…</a></h4>
 
 	
@@ -138,11 +139,11 @@ espacio y estrategia para llegar adelante este plan de gestion de residuos solo 
 		  
 		<h3><strong>¿Quiénes se han beneficiados con estas actividades y de qué manera?</strong></h3>
 		<p> <img src="img/pe13.jpg" align ="right"  width="400" height="195"></p>
-
+<ul>
 		<p>La Comunidad de Caleta La Tortuga es una comunidad aborigen de aproximadamente 8,000 habitantes  que hasta 
-	la fecha practica actividades Pre Incas de pesca artesanal. 
+	la fecha practica actividades Pre-incas de pesca artesanal. 
  
- <strong>Se han beneficiado 30 mujeres y 10 hombres. El beneficio se ha traducido en lo siguiente: </strong></p>
+ <strong>Se han beneficiado 30 mujeres y 10 hombres. El beneficio se ha traducido en lo siguiente: </strong></p></ul>
  <ul>
 <li>En el impulso para la creación, organización y registro de un grupo de la sociedad civil de la Caleta La Tortuga 
 	llamado Colectivo Civil La Tortuga. Este grupo está conformado principalmente por jóvenes mujeres.</li>
@@ -152,15 +153,15 @@ espacio y estrategia para llegar adelante este plan de gestion de residuos solo 
 <p> <img src="img/sunat.png" align ="center" ></p>
 
 </ul>
-<p><b>¿ Ayudando a mejorar las condiciones medioambientales?</b></p>
+<p><b>¿ Ayudando a mejorar las condiciones medio ambientales?</b></p>
 <ul>
 <p> La información proporcionada por la estación metereologica esta permitiendo el entendimiento y 
-	educación de la población local de sus flujos atmosfericos, como son el viento y la energia solar.
-	 Ademas esta impulsando iniciativas adicionales como la medicion de la temperatura del mar, por parte 
-	 de la comunidad local. Estos principales parametros han creado las bases para crear y desarollar proyectos de desarrollo como son el futuro uso de energia renovable (viento y solar), la futura posibilidad de desalinizacion del agua del mar,  la siembra de arboles, la elaboracion de compost 
-	con los desperdicios organicos y el siguimiento de los parametros del fenomeno del nino.</p>
+	educación de la población local de sus flujos atmosféricos, como son el viento y la energía solar.
+	 Además esta impulsando iniciativas adicionales como la medición de la temperatura del mar, por parte 
+	 de la comunidad local. Estos principales parametros han creado las bases para crear y desarollar proyectos de desarrollo como son el futuro uso de energía renovable (viento y solar), la futura posibilidad de desalinización del agua del mar,  la siembra de árboles, la elaboración de compost 
+	con los desperdicios orgánicos y el siguimiento de los parametros del fenomeno del niño.</p>
 </ul>
-	<p><b>¿ Ayudando a fortalecer la organización? </b></p>
+	<p><b>¿ Ayúdando a fortalecer la organización? </b></p>
 <ul>
 
 	<p>Si, Juntos, El Colectivo La Tortuga, La Municipalidad CP La Tortuga y Trópico Seco hemos logrado establecer 
@@ -172,9 +173,9 @@ espacio y estrategia para llegar adelante este plan de gestion de residuos solo 
 		  como un modelo que enfrenta la pobreza, la inequidad económica y el calentamiento global.</p>
 		   
 </ul>
-<p><b>¿ Ayudando a  incrementar la participación o sensibilización de la comunidad?</b></p>
+<p><b>¿ Ayúdando a  incrementar la participación o sensibilización de la comunidad?</b></p>
 <ul>
-	<p>Si, La IEC-LT fue elegida para  participar en la XVIII Conferencia Mundial de Energía Viento en Rio de Janeiro 
+	<p>Si, La IEC-LT fue elegida para  participar en la XVIII Conferencia Mundial de Energía Viento en Río de Janeiro 
 		Brasil en Noviembre del 2019 y fue presentada por el Alcalde del 
 		CP La Tortuga Cesar Ruiz Nunura. 
 		 <img src="img/slide4.jpg" align ="right" width="397" height="248"></p>
@@ -184,8 +185,8 @@ espacio y estrategia para llegar adelante este plan de gestion de residuos solo 
 	<p>Este proyecto ha propiciado que logremos crear la IEC-LT. Parte de esta iniciativa es tratar de 
 		impactar en las políticas gubernamentales nacionales e internacionales en relación a la promoción 
 		y apoyo a  las Iniciativas de Energía Comunitaria principalmente para los países en vías desarrollo
-		 como el Perú, Latinoamérica y otras partes del Mundo.  A continuación página #13   
-		 de la conferencia ofrecida por el alcalde del CP La Tortuga en la XVIII Conferencia Mundial de Energía Eólica en Brasil, 
+		 como el Perú, Latinoamérica y otras partes del Mundo. 
+		 La conferencia ofrecida por el alcalde del CP La Tortuga en la XVIII Conferencia Mundial de Energía Eólica en Brasil, 
 		 este evento se realizó en Noviembre del 2019.</p>
 </ul>
 <p><b> ¿Ha ayudado a que su organización tenga un impacto en medios de comunicación?</b></p>

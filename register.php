@@ -1,25 +1,25 @@
 <?php
 session_start();
-include "admin/database.php";
+include "web_admin/Database.php";
 $db = new Database();
 $con = $db->connect();
-if (isset($_POST["nombres"])) {
+if (isset($_POST["nombre"])) {
 
-	$nombres = $_POST["nombres"];
+	$nombre = $_POST["nombre"];
 	$apellidos = $_POST["apellidos"];
 	$email = $_POST['email'];
 	$clave = $_POST['clave'];
 	$repassword = $_POST['repassword'];
 	$telefono = $_POST['telefono'];
 	$direccion = $_POST['direccion'];
-	$documento = $_POST['documento'];
-	$razonsocial = $_POST['razon_social'];
+	$dni = $_POST['dni'];
+	$Razonsocil = $_POST['razon_social'];
 	$name = "/^[a-zA-Z ]+$/";
 	$emailValidation = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$/";
 	$number = "/^[0-9]+$/";
 
-if(empty($nombres) || empty($apellidos) || empty($email) || empty($clave) || empty($repassword) ||
-	empty($telefono) || empty($direccion) || empty($documento) || empty($razonsocial)){
+if(empty($nombre) || empty($apellidos) || empty($email) || empty($clave) || empty($repassword) ||
+	empty($telefono) || empty($direccion) || empty($dni) || empty($Razonsocil)){
 
 		echo "
 			<div class='alert alert-warning'>
@@ -28,11 +28,11 @@ if(empty($nombres) || empty($apellidos) || empty($email) || empty($clave) || emp
 		";
 		exit();
 	} else {
-		if(!preg_match($name,$nombres)){
+		if(!preg_match($name,$nombre)){
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-				<b>this $nombres is not valid..!</b>
+				<b>this $nombre is not valid..!</b>
 			</div>
 		";
 		exit();
@@ -118,13 +118,13 @@ if(empty($nombres) || empty($apellidos) || empty($email) || empty($clave) || emp
 		$sql = "INSERT INTO colaboradores
 		(idcolaborador, nombre, apellidos, email,
 		clave, telefono, direccion, dni, Razonsocil, fecharegistro)
-		VALUES (NULL, '$nombres', '$apellidos', '$email',
-		'$clave', '$telefono', '$direccion', '$documento', '$razonsocial', now())";
+		VALUES (NULL, '$nombre', '$apellido', '$email',
+		'$clave', '$telefono', '$direccion', '$dni', '$Razonsocil', now())";
 		$run_query = mysqli_query($con,$sql);
 		$_SESSION["uid"] = mysqli_insert_id($con);
-		$_SESSION["name"] = $nombres;
+		$_SESSION["name"] = $nombre;
 		$ip_add = getenv("REMOTE_ADDR");
-		$sql = "UPDATE cart SET user_id = '$_SESSION[uid]' WHERE ip_add='$ip_add' AND user_id = -1";
+		
 		if(mysqli_query($con,$sql)){
 			echo "register_success";
 			exit();

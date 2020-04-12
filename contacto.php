@@ -33,16 +33,17 @@
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quienes somos</a></li>
+			<li><a href="nosotros.php"><span class="glyphicon glyphicon-modal-window"></span> Quiénes somos</a></li>
 			  <li><a href="proyectos.php"><span class="glyphicon glyphicon-modal-window"></span> CLT-CT-Proyectos</a></li>
 				
-			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayudanos ?</a></li>
+			  <li><a href="index.html"><span class="glyphicon glyphicon-modal-window" ></span> Ayúdanos</a></li>
 				
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Testimonios</a></li>
-				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galeria</a></li>
-				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contactanos</a></li>
+				<li><a href="video.html"><span class="glyphicon glyphicon-modal-window"></span> Galería</a></li>
+				<li><a href="contacto.php"><span class="glyphicon glyphicon-modal-window"></span> Contáctanos</a></li>
 	
-				<li><a href="web_admin/representantes.html"><span class="glyphicon glyphicon-modal-window"></span> prueba</a></li>
+			
+				
 	
 			</ul>
 			<!--
@@ -71,7 +72,7 @@
               <h1>
 				 
 			  <img src="img/LOGOSINFONDO.png" alt="Trulli" width="90" height="80">
-			  CONTACTANOS - PERÚ <small></small></h1>
+			  CONTÁCTANOS - PERÚ <small></small></h1>
             </div>
             <div class="col-md-2">
               <div class="dropdown crear">
@@ -104,10 +105,10 @@
     <div class="container">
     	<div class="row">
     		<div class="col-xs-12 col-sm-12 col-md-4">
-    			<h4>Comuniquese con nosotros</h4>
+    			<h4>Comuníquese con nosotros</h4>
 				<div id="informacion_contacto">
-			      <p><i class="fa fa-email"></i><b>Asociacion</b><br>
-			      	Colectivo civico por el desarrollo integral del centro poblado la Tortuga-Paita</p>
+			      <p><i class="fa fa-email"></i><b>Asociación</b><br>
+			      	Colectivo Civico por el desarrollo integral del centro poblado la Tortuga-Paita</p>
 			      <p>
 			      	<b>RUC</b><br>
 			      	20605653406
@@ -162,7 +163,7 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-	<script src="ipp.js"></script>
+	<script src="js/ipp.js"></script>
     
 </body>
 </html>

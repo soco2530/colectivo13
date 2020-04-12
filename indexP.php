@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style></style>
 	</head>
@@ -49,7 +49,7 @@
 		     </form>
 			 -->
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Colectivo paita <span class="badge">0</span></a>
+				<li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Colectivo Tortuga <span class="badge">0</span></a>
 				</li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Iniciar Session</a>
 					<ul class="dropdown-menu">
